@@ -22,7 +22,7 @@ public class EbayProductPage extends UtilityClass {
 	@FindBy(xpath = "//input[@value='Search']")
 	private WebElement searchButton;
 
-	@FindBy(xpath = "//h3[@class='s-item__title']")
+	@FindBy(xpath = "//div[@class='s-item__title']")
 	private List<WebElement> productNameList;
 
 	@FindBy(xpath = "//span[@class='s-item__price']")

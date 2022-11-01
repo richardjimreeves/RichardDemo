@@ -24,7 +24,7 @@ public class GmailLoginPage extends UtilityClass {
 	@FindBy(xpath = "//span[text()='Next']")
 	private WebElement buttonNext;
 
-	@FindBy(xpath = "//a[@class='gb_A gb_La gb_f']")
+	@FindBy(xpath = "//a[@class='gb_A gb_Ma gb_f']")
 	private WebElement profileIcon;
 
 	@FindBy(xpath = "//div[@class='Wdz6e ZnExKf']")
@@ -73,14 +73,14 @@ public class GmailLoginPage extends UtilityClass {
 
 	public void enterPassword() throws IOException, InterruptedException {
 		Thread.sleep(2000);
-		WebElement pass = driver.findElement(By.name("password"));
+		WebElement pass = driver.findElement(By.name("Passwd"));
 		pass.sendKeys(getPropertyValue("password"));
 		jsClick(getButtonNext());
 	}
 
 	public void enterInvalidPassword() throws IOException, InterruptedException {
 		Thread.sleep(2000);
-		WebElement pass = driver.findElement(By.name("password"));
+		WebElement pass = driver.findElement(By.name("Passwd"));
 		pass.sendKeys(getPropertyValue("invalidpass"));
 		jsClick(getButtonNext());
 	}

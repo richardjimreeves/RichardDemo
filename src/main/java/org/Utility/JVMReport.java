@@ -11,7 +11,7 @@ public class JVMReport {
 
 	public static void generateJVMReport(String json) {
 		File loc = new File(System.getProperty("user.dir") + "\\src\\test\\resources\\Reports\\JVMReports");
-		Configuration con = new Configuration(loc, "Facebook");
+		Configuration con = new Configuration(loc, "TESTPRACTISE");
 		con.addClassifications("Browser Name", "Chrome");
 		con.addClassifications("Browser Version", "100");
 		con.addClassifications("OS Name", "Windows 11");

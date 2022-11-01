@@ -24,6 +24,7 @@ public class GmailLoginSteps extends UtilityClass {
 	public void the_user_has_to_enter_the_username_and_click_the_next_button() throws IOException, InterruptedException {
 		 loginPage=new GmailLoginPage();
 		loginPage.enterUserName();
+		Thread.sleep(5000);
 	    
 	}
 
